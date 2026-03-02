@@ -201,6 +201,8 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
+# Competition raw data
+data/raw/
 # Marimo
 marimo/_static/
 marimo/_lsp/
