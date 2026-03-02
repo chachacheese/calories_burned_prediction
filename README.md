@@ -4,6 +4,10 @@
 
 **RMSE 2.24 → 0.13 (94% 감소) | 리더보드 0.12**
 
+Final OOF RMSE: 0.134
+
+Key Insight: Tree → Polynomial 전환 + Residual 구조 분석 + Gender Split
+
 ![RMSE Progression](results/plots/rmse_progression.png)
 
 ---
