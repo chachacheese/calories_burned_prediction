@@ -1,0 +1,13 @@
+Stage,Model,RMSE,Improvement_pct,Phase,Key_Technique
+1,LGBM (baseline),2.241,0.0,Tree,4모델 비교
+2,LGBM + log,1.993,11.1,Tree,로그 변환
+3,LGBM + features,1.775,10.9,Tree,Intensity/Effort 파생변수
+4,LGBM + Optuna,1.370,22.8,Tree,하이퍼파라미터 튜닝
+5,Poly(deg3) Ridge,0.920,32.8,Polynomial,모델 전환 (핵심)
+6,Ridge + KFold,0.540,41.3,Polynomial,규제 + 교차검증
+7,Target Transform Stacking,0.318,41.1,Polynomial,타겟 변환 다양화
+8,Weight Optimization,0.309,2.8,Polynomial,scipy optimize
+9,Feature Pruning,0.300,2.9,Polynomial,base+TOP5
+10,Round (integer),0.221,26.3,Polynomial,정수 타겟 반영
+11,Gender Split,0.157,29.0,Gender,성별 분리 모델
+12,Grid Search (Final),0.134,14.6,Gender,degree/alpha 최적화
